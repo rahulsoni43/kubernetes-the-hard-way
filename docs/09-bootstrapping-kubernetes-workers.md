@@ -57,6 +57,7 @@ wget -q --show-progress --https-only --timestamping \
   https://storage.googleapis.com/kubernetes-release/release/v1.15.3/bin/linux/amd64/kube-proxy \
   https://storage.googleapis.com/kubernetes-release/release/v1.15.3/bin/linux/amd64/kubelet
 ```
+Reference: https://kubernetes.io/docs/setup/release/#node-binaries
 
 Create the installation directories:
 
@@ -173,6 +174,7 @@ LimitCORE=infinity
 WantedBy=multi-user.target
 EOF
 ```
+Reference: https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd
 
 ### Configure the Kubelet
 
